@@ -13,8 +13,8 @@
         <link rel="icon" href="logo.png">
 
         <title>R&D INNOVATION</title>
-        <meta name="description" content="FUN with WebGL">
-
+        <meta name="description" content="A WebGL fluid simulation that works in mobile browsers.">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Webgl Fluid Simulation">
         <meta property="og:description" content="A WebGL fluid simulation that works in mobile browsers.">
@@ -99,6 +99,18 @@
             .discord:before {
                 content: 'd';
             }
+
+	    #canvas-text {
+		color: black;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+    font-family: "Bungee Shade";
+    font-size: 50px;
+      }
+
         </style>
         <script>
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -108,7 +120,11 @@
         <script async src='https://www.google-analytics.com/analytics.js'></script>
     </head>
     <body>
-        <canvas></canvas>
+	<canvas></canvas>
+	<h1 id="canvas-text">
+	    R&D INNOVATION
+	</h1>
+
         <script src="./script.js"></script>
     </body>
 </html>

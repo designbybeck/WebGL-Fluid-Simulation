@@ -99,6 +99,16 @@
             .discord:before {
                 content: 'd';
             }
+
+	    #canvas-text {
+		color: white;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+	    }
+
         </style>
         <script>
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -108,7 +118,10 @@
         <script async src='https://www.google-analytics.com/analytics.js'></script>
     </head>
     <body>
-        <canvas></canvas>
+	<canvas></canvas>
+	<h1 id="canvas-text">
+	    Hello, World!
+	</h1>
         <script src="./script.js"></script>
     </body>
 </html>
